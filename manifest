@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="opencord"
+           fetch=".."
+           review="https://gerrit.opencord.org/"
+           revision="cord-3.0" />
+  <default revision="cord-3.0"
+           remote="opencord"
+           sync-j="4" />
+           
+  <remote  name="criterion"
+           fetch=".."
+           review="https://github.com/"
+           revision="criterion-cord-3.0" />
+
+<project path="build" name="cord" groups="build"/>
+<project path="build/maas" name="maas" groups="build"/>
+<project path="build/platform-install" name="platform-install" groups="build" remote="criterion"/>
+
+<project path="onos-apps" name="cord-onos-publisher" groups="onos"/>
+<project path="onos-apps/apps/aaa" name="aaa" groups="onos"/>
+<project path="onos-apps/apps/config" name="config" groups="onos"/>
+<project path="onos-apps/apps/igmp" name="igmp" groups="onos"/>
+<project path="onos-apps/apps/mcast" name="mcast" groups="onos"/>
+<project path="onos-apps/apps/olt" name="olt" groups="onos"/>
+<project path="onos-apps/apps/vtn" name="vtn" groups="onos"/>
+<project path="onos-apps/apps/carrierethernet" name="carrierethernet" groups="onos"/>
+
+<project path="test/cord-tester" name="cord-tester" groups="test"/>
+<project path="test/fabric-oftest" name="fabric-oftest" groups="test"/>
+
+<project path="orchestration/xos" name="xos" groups="orchestration"/>
+<project path="orchestration/xos_services/exampleservice" name="exampleservice" groups="orchestration,services"/>
+<project path="orchestration/xos_services/fabric" name="fabric" groups="orchestration,services"/>
+<project path="orchestration/xos_services/hypercache" name="hypercache" groups="orchestration,services"/>
+<project path="orchestration/xos_services/monitoring" name="monitoring" groups="orchestration,services"/>
+<project path="orchestration/xos_services/onos-service" name="onos-service" groups="orchestration,services"/>
+<project path="orchestration/xos_services/openstack" name="openstack" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vrouter" name="vrouter" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vsg" name="vsg" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vtr" name="vtr" groups="orchestration,services"/>
+<project path="orchestration/xos_services/globalxos" name="globalxos" groups="orchestration,services"/>
+
+<project path="orchestration/xos_services/vbbu" name="vBBU" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vmme" name="vMME" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vpgwc" name="vPGWC" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vpgwu" name="vPGWU" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vsgwc" name="vSGW" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vsgwu" name="vSGWU" groups="orchestration,services"/>
+<project path="orchestration/xos_services/progran" name="progran" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vhss" name="vHSS" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vmm" name="vMM" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vsm" name="vSM" groups="orchestration,services"/>
+
+<project path="orchestration/xos_services/vEE" name="vEE" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vEG" name="vEG" groups="orchestration,services"/>
+<project path="orchestration/xos_services/metro-net" name="metro-net" groups="orchestration,services"/>
+<project path="orchestration/xos_services/metronet-local" name="metronet-local" groups="orchestration,services" upstream="master"/>
+
+<project path="orchestration/profiles/rcord" name="rcord" groups="orchestration,profiles"/>
+<project path="orchestration/profiles/ecord" name="ecord" groups="orchestration,profiles"/>
+<project path="orchestration/profiles/mcord" name="mcord" groups="orchestration,profiles"/>
+<project path="orchestration/profiles/opencloud" name="opencloud" groups="orchestration,profiles"/>
+
+<project path="orchestration/xos-gui" name="xos-gui" groups="orchestration"/>
+<project path="orchestration/xos-sample-gui-extension" name="xos-sample-gui-extension" groups="orchestration"/>
+<project path="orchestration/xos-rest-gw" name="xos-rest-gw" groups="orchestration"/>
+<project path="orchestration/xos_libraries/ng-xos-lib" name="ng-xos-lib" groups="orchestration,libraries"/>
+
+<project path="component/chameleon" name="chameleon" groups="voltha">
+    <linkfile src="." dest="incubator/voltha/chameleon"/>
+</project>
+<project path="incubator/voltha" name="voltha" groups="incubation,voltha"/>
+
+</manifest>
