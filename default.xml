@@ -2,8 +2,7 @@
 <manifest>
 
 <remote  name="criterion"
-           fetch=".."
-           review="https://github.com/"
+           fetch="https://github.com/"
            revision="criterion-cord-3.0" />  
 
 
