@@ -56,7 +56,7 @@
 <project path="orchestration/xos_services/vsm" name="vSM" groups="orchestration,services"/>
 
 <project path="orchestration/xos_services/vEE" name="vEE" groups="orchestration,services"/>
-<project path="orchestration/xos_services/vEG" name="vEG" groups="orchestration,services"/>
+<project path="orchestration/xos_services/vEG" name="vEG" groups="orchestration,services" remote="opencord"/>
 <project path="orchestration/xos_services/metro-net" name="metro-net" groups="orchestration,services"/>
 <project path="orchestration/xos_services/metronet-local" name="metronet-local" groups="orchestration,services" upstream="master"/>
 
