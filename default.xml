@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote  name="criterion"
+<remote  name="vpramo"
            fetch="https://github.com/"
            revision="criterion-cord-3.0" />  
 
@@ -17,7 +17,7 @@
 
 <project path="build" name="cord" groups="build"/>
 <project path="build/maas" name="maas" groups="build"/>
-<project path="build/platform-install" name="platform-install" groups="build" remote="criterion"/>
+<project path="build/platform-install" name="platform-install" groups="build" remote="vpramo"/>
 
 <project path="onos-apps" name="cord-onos-publisher" groups="onos"/>
 <project path="onos-apps/apps/aaa" name="aaa" groups="onos"/>
