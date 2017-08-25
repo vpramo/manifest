@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="opencord"
+<remote  name="criterion"
+           fetch=".."
+           review="https://github.com/"
+           revision="criterion-cord-3.0" />  
+
+
+<remote  name="opencord"
            fetch=".."
            review="https://gerrit.opencord.org/"
            revision="cord-3.0" />
@@ -9,10 +15,6 @@
            remote="opencord"
            sync-j="4" />
            
-  <remote  name="criterion"
-           fetch=".."
-           review="https://github.com/"
-           revision="criterion-cord-3.0" />
 
 <project path="build" name="cord" groups="build"/>
 <project path="build/maas" name="maas" groups="build"/>
