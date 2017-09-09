@@ -31,7 +31,7 @@
 <project path="test/cord-tester" name="cord-tester" groups="test"/>
 <project path="test/fabric-oftest" name="fabric-oftest" groups="test"/>
 
-<project path="orchestration/xos" name="xos" groups="orchestration"/>
+<project path="orchestration/xos" name="xos-1" groups="orchestration" remote="vpramo"/>
 <project path="orchestration/xos_services/exampleservice" name="exampleservice" groups="orchestration,services"/>
 <project path="orchestration/xos_services/fabric" name="fabric" groups="orchestration,services"/>
 <project path="orchestration/xos_services/hypercache" name="hypercache" groups="orchestration,services"/>
